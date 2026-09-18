@@ -43,22 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (prevBtn) {
       prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-        } else {
-          currentIndex = chConfig.total - 1;
-        }
+        currentIndex = (currentIndex - 1) % chConfig.total;
         renderActiveView();
       });
     }
 
     if (nextBtn) {
       nextBtn.addEventListener("click", () => {
-        if (currentIndex < chConfig.total - 1) {
-          currentIndex++;
-        } else {
-          currentIndex = 0;
-        }
+        currentIndex = (currentIndex + 1) % chConfig.total;
         renderActiveView();
       });
     }
