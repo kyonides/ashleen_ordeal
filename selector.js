@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderActiveView() {
         if (!imgDisplay || !counter || !prevBtn || !nextBtn) return;
-
-        imgDisplay.src = `chapter${formattedCh}/${formattedCh}${currentIndex}.jpg`;
+        const panel = String(currentIndex).padStart(3, '0'); 
+        imgDisplay.src = `chapter${formattedCh}/${panel}.jpg`;
         counter.textContent = `${currentIndex} / ${chConfig.total}`;
         prevBtn.style.opacity = "1";
 
