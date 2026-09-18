@@ -42,20 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (prevBtn) {
-        prevBtn.addEventListener("click", () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                renderActiveView();
-            }
-        });
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = chConfig.total - 1;
+        }
+        renderActiveView();
+      });
     }
 
     if (nextBtn) {
-        nextBtn.addEventListener("click", () => {
-            if (currentIndex < chConfig.total - 1) {
-                currentIndex++;
-                renderActiveView();
-            }
-        });
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < chConfig.total - 1) {
+          currentIndex++;
+          renderActiveView();
+        }
+      });
     }
 });
