@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashleen's Ordeal - Reading Portal</title>
+  <link rel="stylesheet" href="reader.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <a href="index.html" class="back-link">← Table of Contents</a>
+    <div style="text-align: right;">
+      <button id="theme-toggle" aria-label="Toggle Theme">
+        <span class="mode-icon icon-sun">☀️</span>
+        <span class="mode-icon icon-moon">🌙</span>
+      </button>
+    </div>
+  </header>
+  <main class="comic-container">
+    <!-- Title updates automatically via script -->
+    <h2 id="chapter-title">Loading Chapter...</h2>
+    <div class="panel-viewport">
+      <img id="comic-display" src="" alt="Comic Panel">
+    </div>
+    <div class="nav-buttons">
+      <button class="nav-btn" id="prev-btn">Prev</button>
+      <span id="panel-counter">Cover</span>
+      <button class="nav-btn" id="next-btn">Next</button>
+    </div>
+  </main>
+  <script src="selector.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.comic-container {
+    width: 100%;
+    max-width: 1280px; /* Locks expansion to the native panel resolution */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#comic-display {
+    width: 100%;
+    height: auto;
+    /* Prevents the panel from taking up more than 75% of the screen height */
+    max-height: 75vh; 
+    aspect-ratio: 16 / 9;
+    object-fit: contain; /* Prevents stretching and cropping distortion */
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
