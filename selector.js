@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (nextBtn) {
         nextBtn.addEventListener("click", () => {
-            if (currentIndex < chConfig.total) {
+            if (currentIndex < chConfig.total - 1) {
                 currentIndex++;
                 renderActiveView();
             }
