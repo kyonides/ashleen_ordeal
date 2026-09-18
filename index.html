@@ -5,28 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ashleen's Ordeal</title>
   <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
 </head>
 <body>
-  <div class="cover">
-    <img src="./covers/aoc00.jpg" alt="Main Cover Art" id="cover-art">
-  </div>
-
-  <div class="chapters">
-    <h1>Chapters</h1>
-    <div id="chapter-list">
-      <a href="chapter1.html">
-        <img src="./thumbnails/aoc01.jpg" alt="Chapter 1">
-        Chapter 1
+  <header class="main-header">
+    <div style="text-align: right;">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <span class="mode-icon icon-sun">☀️</span>
+          <span class="mode-icon icon-moon">🌙</span>
+        </button>
+    </div>
+    <img src="covers/aoc00.jpg" alt="Ashleen's Ordeal Cover Art" class="main-cover">
+  </header>
+  <section class="chapter-list">
+    <div class="thumbnail-grid">
+      <a href="chapter01/index.html" class="chapter-card">
+        <img src="thumbnails/aoc01.jpg" alt="Chapter 1" class="chapter-thumb">
+        <h4>Chapter 1</h4>
       </a>
-      <a href="chapter2.html">
-        <img src="./thumbnails/aoc02.jpg" alt="Chapter 2">
-        Chapter 2
+      <a href="chapter02/index.html" class="chapter-card">
+        <img src="thumbnails/aoc02.jpg" alt="Chapter 2" class="chapter-thumb">
+        <h4>Chapter 2</h4>
       </a>
-      <a href="chapter3.html">
-        <img src="./thumbnails/aoc03.jpg" alt="Chapter 3">
-        Chapter 3
+      <a href="chapter03/index.html" class="chapter-card">
+        <img src="thumbnails/aoc03.jpg" alt="Chapter 3" class="chapter-thumb">
+        <h4>Chapter 3</h4>
       </a>
     </div>
-  </div>
+  </section>
 </body>
 </html>
