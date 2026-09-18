@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!imgDisplay || !counter || !prevBtn || !nextBtn) return;
 
         imgDisplay.src = `chapter${formattedCh}/${formattedCh}${currentIndex}.jpg`;
-        counter.textContent = `Panel ${currentIndex} of ${chConfig.total}`;
+        counter.textContent = `${currentIndex} / ${chConfig.total}`;
         prevBtn.style.opacity = "1";
 
         nextBtn.style.opacity = (currentIndex === chConfig.total) ? "0.3" : "1";
