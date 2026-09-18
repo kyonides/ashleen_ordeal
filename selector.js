@@ -56,8 +56,10 @@ document.addEventListener("DOMContentLoaded", () => {
       nextBtn.addEventListener("click", () => {
         if (currentIndex < chConfig.total - 1) {
           currentIndex++;
-          renderActiveView();
+        } else {
+          currentIndex = 0;
         }
+        renderActiveView();
       });
     }
 });
