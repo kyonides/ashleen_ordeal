@@ -156,3 +156,24 @@ html.dark .icon-moon {
     margin-top: 20px;
     width: 100%;
 }
+
+@media (max-width: 480px) and (orientation: portrait) {
+    #comic-display {
+        max-height: 85vh;
+        aspect-ratio: auto;
+        width: 100%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .thumbnail-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
